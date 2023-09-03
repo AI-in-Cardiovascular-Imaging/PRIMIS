@@ -1,0 +1,16 @@
+{
+  "train_run": "Dec11_13-08-36_heg-rl001_train",
+  "global": {
+    "device": "cuda:0",
+    "batch": 30,
+    "shuffle": false,
+    "max_num_batch": null,
+    "workers": 0
+  },
+  "data": {
+    "test_path": "splits/test.txt",
+    "target_dir": "./storage",
+    "k": 16
+  }
+}
+

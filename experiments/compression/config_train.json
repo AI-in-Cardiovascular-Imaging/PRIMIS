@@ -1,0 +1,40 @@
+{
+  "global": {
+    "device": "cuda:0",
+    "batch": 4,
+    "epochs": 20,
+    "lr": 0.0003,
+    "weight_decay": 1e-6,
+    "workers": 0
+  },
+  "data": {
+    "train_path": "splits/train.txt",
+    "valid_path": "splits/valid.txt"
+  },
+  "images": {
+    "image_size": [
+      512,
+      512
+    ],
+    "patch_size": [
+      64,
+      64
+    ]
+  },
+  "network": {
+    "sampling_ratio_list": [
+      2,
+      2
+    ],
+    "channels_list": [
+      1,
+      32,
+      64
+    ],
+    "proj_filter_size": 8,
+    "num_proj_channels": 256,
+    "k": 16,
+    "num_code_maps": 4,
+    "dropout": 0.08
+  }
+}
