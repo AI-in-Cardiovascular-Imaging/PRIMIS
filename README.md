@@ -1,6 +1,10 @@
 # PRI.M.I.S: Privacy-Preserving Medical Image Sharing
 This repository houses the official PyTorch implementation of our paper titled "**PRIMIS: Privacy-Preserving Medical Image Sharing via Deep Sparsifying Transform Learning with Obfuscation**".
 
+Our aim is to design a privacy-preserving data-sharing mechanism that allows medical images to be stored as encoded and obfuscated representations in the public domain without revealing any useful or recoverable content from the images. In tandem, we aim to provide authorized users with compact private keys that could be used to reconstruct the corresponding images. 
+
+Our approach involves utilizing a neural auto-encoder. The convolutional filter outputs are passed through sparsifying transformations to produce multiple compact codes. Each code is responsible for reconstructing different attributes of the image. The key privacy-preserving element in this process is obfuscation through the use of specific pseudo-random noise. When applied to the codes, it becomes computationally infeasible for an attacker to guess the correct representation for all codes, thereby preserving the privacy of the data. 
+
 ## **Contents**
 
 - **Sparse Ternary AutoEncoder**: A novel architecture for compressing images, allowing for adjustable reconstruction quality based on network capacity. Produces sparse ternary codes suited for ambiguation processes.
