@@ -1,5 +1,7 @@
-# PRI.M.I.S: Privacy-Preserving Medical Image Sharing
-This repository houses the official PyTorch implementation of our paper titled "**PRIMIS: Privacy-Preserving Medical Image Sharing via Deep Sparsifying Transform Learning with Obfuscation**".
+# PRIMIS: PRIvacy-preserving Medical Image Sharing
+This repository houses the official PyTorch implementation of our paper titled "**PRIMIS: Privacy-Preserving Medical Image Sharing via Deep Sparsifying Transform Learning with Obfuscation**", Journal of Biomedical Informatics, Elsevier, 2024.
+
+## Overview
 
 Our aim is to design a privacy-preserving data-sharing mechanism that allows medical images to be stored as encoded and obfuscated representations in the public domain without revealing any useful or recoverable content from the images. In tandem, we aim to provide authorized users with compact private keys that could be used to reconstruct the corresponding images. 
 
@@ -80,3 +82,17 @@ Similarly, `config_infer.py` specifies the configurations for the inference time
 Once all configurations are properly set, simply run `python3 experiments/compression/train.py -c <path/to/the/train/config.json>`. You can track the experiments evolution using tensorboard.
 Ambiguation and dis-ambiguation are done using `python3 experiments/compression/infer.py <path/to/the/inference/config.json>`.
 -->
+
+## Citation
+
+If you find our work useful in your research, please consider citing our paper. The bibtex entry is provided below:
+
+```bibtex
+@article{shiri2023primis,
+  title={PRIMIS: Privacy-Preserving Medical Image Sharing via Deep Sparsifying Transform Learning with Obfuscation},
+  author={Shiri, Isaac and Razeghi, Behrooz and Ferdowsi, Sohrab and Salimi, Yazdan and G{\"u}nd{\"u}z, Deniz and Teodoro, Douglas and oloshynovskiy, Slava and Zaidi, Habib},
+  journal={Journal of Biomedical Informatics},
+  volume={150},
+  year={2024},
+  publisher={Elsevier}
+}
